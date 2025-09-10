@@ -10,8 +10,7 @@
 ## 1. Proyecto de Auditoría de Riesgos
 
 ### Login
-- **Evidencia:**  
-*(Captura de pantalla o enlace al código fuente correspondiente)*  
+- <img width="454" height="508" alt="login" src="https://github.com/user-attachments/assets/9206665e-3ec6-4026-80d6-8bd83a08fc39" /> 
 
 - **Descripción:**  
 Se implementó un inicio de sesión ficticio sin base de datos, en el cual se validan credenciales predefinidas directamente en el código del frontend.  
