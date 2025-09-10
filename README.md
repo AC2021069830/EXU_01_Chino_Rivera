@@ -1,124 +1,74 @@
-# Gestión de Riesgos para Activos Digitales
+# Informe de Auditoría de Sistemas - Examen de la Unidad I
 
-## Descripción del Proyecto
-Identificación y gestión automatizada de riesgos en activos digitales, que utiliza modelos de lenguaje avanzados ejecutados localmente. La herramienta proporciona:
+## Datos del Estudiante
+- **Nombres y apellidos:** Angel Alessandro Chino Rivera  
+- **Fecha:** 10/09/2025  
+- **URL GitHub:** [AC2021069830/EXU_01_Chino_Rivera](https://github.com/AC2021069830/EXU_01_Chino_Rivera.git)  
 
-- Generación automática de perfiles de riesgo
-- Análisis de impactos potenciales
-- Recomendaciones de mitigación alineadas con ISO 27001
-- Interfaz intuitiva para gestión de casos
+---
 
-## Tecnologías Implementadas
+## 1. Proyecto de Auditoría de Riesgos
 
-### Frontend
-- **React 18** con **Vite** (entorno de desarrollo rápido)
-- **Ant Design** (biblioteca de componentes UI profesional)
-- **Axios** (para comunicación con el backend)
+### Login
+- **Evidencia:**  
+*(Captura de pantalla o enlace al código fuente correspondiente)*  
 
-### Backend
-- **Flask** (servidor web ligero en Python)
-- **Ollama** (infraestructura local para modelos LLM)
-- **LangChain** (orquestación de prompts avanzados)
-- **LLAMA** (modelo de lenguaje para recomendaciones)
+- **Descripción:**  
+Se implementó un inicio de sesión ficticio sin base de datos, en el cual se validan credenciales predefinidas directamente en el código del frontend.  
+Para esta evaluación, las credenciales configuradas por defecto son:  
+  - **Usuario:** `admin`  
+  - **Contraseña:** `123456`  
 
-## Requisitos del Sistema
+---
 
-### Dependencias principales
-- Visual Studio Code https://code.visualstudio.com
-- Node.js v18+ (para el frontend) https://nodejs.org/en/download
-- Python 3.9+ (para el backend o la versión más reciente) https://www.python.org/downloads/
-- Ollama instalado localmente https://ollama.com
-- Git (para clonar el repositorio) https://git-scm.com/downloads
+### Motor de Inteligencia Artificial
+- **Evidencia:**  
+*(Captura de la sección del código fuente mejorado de IA que permite su funcionamiento)*  
 
-## Instalación y Configuración
+- **Descripción:**  
+Breve explicación de la sección de código mejorado que hace posible el funcionamiento de la IA en el sistema.  
 
-### 1. Clonar el repositorio
-```bash
-git clone https://github.com/OscarJimenezFlores/CursoAuditoria/tree/main/AuditoriaRiesgos
-cd AuditoriaRiesgos
-```
+---
 
-### 2. Configuración del FRONTEND
-```bash
-cd frontend
-npm install
-npm run dev
-```
-El FRONT estará disponible en: http://localhost:5173
+## 2. Hallazgos
 
-### 3. Configuración del Backend
+### Activo 1: *(Título del activo)*
+- **Evidencia:** *(Captura)*  
+- **Condición:** *(Situación encontrada en el activo)*  
+- **Recomendación:** *(Acción correctiva o preventiva)*  
+- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
 
-#### Para usuarios macOS
-```bash
-brew install ollama
-ollama pull llama2:7b
-ollama run llama2:7b
-```
+---
 
-#### Para usuarios Windows
+### Activo 2: *(Título del activo)*
+- **Evidencia:** *(Captura)*  
+- **Condición:** *(Situación encontrada en el activo)*  
+- **Recomendación:** *(Acción correctiva o preventiva)*  
+- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
 
-1. Descargar el instalador desde ollama.com (https://ollama.com)  
-2. O puede ejecutar en la terminal de VsCode / PowerShell:
+---
 
-```bash
-ollama pull llama2:7b
-ollama run llama2:7b
-```
+### Activo 3: *(Título del activo)*
+- **Evidencia:** *(Captura)*  
+- **Condición:** *(Situación encontrada en el activo)*  
+- **Recomendación:** *(Acción correctiva o preventiva)*  
+- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
 
-   Opcionalmente, puede verificar el estado del servicio:
-```bash
-tasklist | findstr ollama
-```
+---
 
-### 4. Iniciar el BACKEND servidor Flask
+### Activo 4: *(Título del activo)*
+- **Evidencia:** *(Captura)*  
+- **Condición:** *(Situación encontrada en el activo)*  
+- **Recomendación:** *(Acción correctiva o preventiva)*  
+- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
 
-```bash
-python app.py
-```
-Nota: Si encuentras problemas con la versión de Python, prueba con el numero de versión Python que instalaste, por ejemplo:
-```bash
-python3.9 app.py
-```
+---
 
-## Solución de Problemas Comunes
+### Activo 5: *(Título del activo)*
+- **Evidencia:** *(Captura)*  
+- **Condición:** *(Situación encontrada en el activo)*  
+- **Recomendación:** *(Acción correctiva o preventiva)*  
+- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
 
-#### Errores de dependencias
-
-Ejecuta:
-```bash
-npm ci --force  # Para frontend
-pip install --upgrade -r requirements.txt  # Para backend
-```
-
-#### Problemas de compatibilidad
-
-Asegúrate de tener instalado
-- Node.js v18+
-- Python 3.9+
-- Ollama versión estable más reciente
-
-#### Terminar Procesos en MAC terminal
-```bash
-# Para frontend (React)
-pkill -f "npm run dev"
-
-# Para backend (Flask)
-pkill -f "python app.py"
-
-# Para Ollama
-pkill -f "ollama"
-```
-
-#### Terminar Procesos en Windows (VSCode/PowerShell)
-```bash
-# Para frontend
-taskkill /F /IM node.exe
-
-# Para backend
-taskkill /F /IM python.exe
-
-# Para Ollama
-taskkill /F /IM ollama.exe
-```
-
+---
 
