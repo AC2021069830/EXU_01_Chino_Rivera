@@ -1,4 +1,4 @@
-<img width="1150" height="492" alt="mejora appy2" src="https://github.com/user-attachments/assets/7185136a-de17-4ae4-803d-f8f458a54bbb" /># Informe de Auditoría de Sistemas - Examen de la Unidad I
+<img width="1864" height="127" alt="tra1" src="https://github.com/user-attachments/assets/3af5f437-b1ae-4505-8b25-6b0e03bbaeef" />##Informe de Auditoría de Sistemas - Examen de la Unidad I
 
 ## Datos del Estudiante
 - **Nombres y apellidos:** Angel Alessandro Chino Rivera  
@@ -38,43 +38,53 @@ Esta mejora permite la generación automática de perfiles de riesgo, impactos y
 
 ## 2. Hallazgos
 
-### Activo 1: *(Título del activo)*
-- **Evidencia:** *(Captura)*  
-- **Condición:** *(Situación encontrada en el activo)*  
-- **Recomendación:** *(Acción correctiva o preventiva)*  
-- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
+
+## Activo 1: Servidor de Base de Datos (Base de Datos)  
+- **Evidencia:**
+<img width="1864" height="127" alt="tra1" src="https://github.com/user-attachments/assets/45950fdf-0c7b-47a6-83e5-7a8695d6cb94" />
+
+- **Condición:** Sin cifrado en reposo ni en tránsito; sin backups automáticos.  
+- **Recomendación:** Habilitar cifrado (AES-256, TLS), configurar respaldos automáticos.  
+- **Riesgo:** 🔴 Alta  
 
 ---
 
-### Activo 2: *(Título del activo)*
-- **Evidencia:** *(Captura)*  
-- **Condición:** *(Situación encontrada en el activo)*  
-- **Recomendación:** *(Acción correctiva o preventiva)*  
-- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
+## Activo 2: API de Transacciones (Servicio Web)  
+- **Evidencia:**
+<img width="1842" height="61" alt="tra2" src="https://github.com/user-attachments/assets/5032381b-106b-4522-9884-82ed294b7fbc" />
+  
+- **Condición:** Sin protección contra inyecciones; tokens inseguros.  
+- **Recomendación:** Validación estricta, WAF, autenticación JWT/OAuth2.  
+- **Riesgo:** 🔴 Alta  
 
 ---
 
-### Activo 3: *(Título del activo)*
-- **Evidencia:** *(Captura)*  
-- **Condición:** *(Situación encontrada en el activo)*  
-- **Recomendación:** *(Acción correctiva o preventiva)*  
-- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
+## Activo 3: Aplicación Web de Banca (Aplicación)  
+- **Evidencia:**
+<img width="1849" height="68" alt="tra3" src="https://github.com/user-attachments/assets/5d7377c7-6891-4f82-8999-69be968abacd" />
+
+- **Condición:** Sesiones indefinidas, sin MFA.  
+- **Recomendación:** Expiración de sesión (15 min), regeneración de sesión, MFA.  
+- **Riesgo:** 🟠 Media  
 
 ---
 
-### Activo 4: *(Título del activo)*
-- **Evidencia:** *(Captura)*  
-- **Condición:** *(Situación encontrada en el activo)*  
-- **Recomendación:** *(Acción correctiva o preventiva)*  
-- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
+## Activo 4: Servidor de Correo (Infraestructura)  
+- **Evidencia:**
+<img width="1847" height="69" alt="tra4" src="https://github.com/user-attachments/assets/ea0d1d79-0840-4ecc-9565-2b91181b13db" />
+
+- **Condición:** Permite correos sin TLS; sin SPF/DKIM/DMARC.  
+- **Recomendación:** TLS obligatorio (587), habilitar SPF, DKIM y DMARC.  
+- **Riesgo:** 🟠 Media  
 
 ---
 
-### Activo 5: *(Título del activo)*
-- **Evidencia:** *(Captura)*  
-- **Condición:** *(Situación encontrada en el activo)*  
-- **Recomendación:** *(Acción correctiva o preventiva)*  
-- **Riesgo:** *(Probabilidad: Baja / Media / Alta)*  
+## Activo 5: Firewall Perimetral (Seguridad)  
+- **Evidencia:**
+<img width="1844" height="98" alt="tra5" src="https://github.com/user-attachments/assets/2a7d1ec0-75d8-4243-9946-3a20bac800c2" />
 
+- **Condición:** Reglas permisivas sin justificación.  
+- **Recomendación:** Hardening de configuración, cierre de puertos, monitoreo con alertas.  
+- **Riesgo:** 🔴 Alta  
 ---
 
